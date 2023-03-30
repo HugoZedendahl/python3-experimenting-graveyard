@@ -24,3 +24,15 @@ def equationroots( a, b, c):
         print("Complex Roots")
         print(- b / (2 * a), " + i", sqrt_val)
         print(- b / (2 * a), " - i", sqrt_val)
+
+#inputs
+a = float(input())
+b = float(input())
+c = float(input())
+
+        # If a is 0, then incorrect equation
+if a == 0:
+        print("Input correct quadratic equation")
+ 
+else:
+    equationroots(a, b, c)
