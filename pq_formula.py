@@ -26,13 +26,25 @@ def equationroots( a, b, c):
         print(- b / (2 * a), " - i", sqrt_val)
 
 #inputs
+print("enter value for a")
 a = float(input())
+print("enter value for b")
 b = float(input())
+print("enter value for c")
 c = float(input())
 
         # If a is 0, then incorrect equation
 if a == 0:
         print("Input correct quadratic equation")
+elif type(a) == str:
+    print("Input correct quadratic equation")
+elif type(b) == str:
+    print("Input correct quadratic equation")
+elif type(c) == str:
+    print("Input correct quadratic equation")
+
+
+
  
 else:
     equationroots(a, b, c)
