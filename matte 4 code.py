@@ -4,7 +4,6 @@ n = 0
 secondN = 0
 sum = 0
 secondSum = 0
-gi
 #while n < 12:
 #    n += 1
 #    sum += 4000 + 2000 * cos(pi*n/6)
