@@ -36,15 +36,5 @@ c = float(input())
         # If a is 0, then incorrect equation
 if a == 0:
         print("Input correct quadratic equation")
-elif type(a) == str:
-    print("Input correct quadratic equation")
-elif type(b) == str:
-    print("Input correct quadratic equation")
-elif type(c) == str:
-    print("Input correct quadratic equation")
-
-
-
- 
 else:
     equationroots(a, b, c)
