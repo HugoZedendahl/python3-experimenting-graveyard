@@ -4,8 +4,9 @@ import math
 
 # function for finding roots
 def equationroots(a, b, c):
-
-    print((((4 * math.pi)** 2) * a) / (b / c))
+    z = b / c
+    x = 4 * math.pi** 2
+    print((x * a) / z ** 2)
 
 
 # inputs
