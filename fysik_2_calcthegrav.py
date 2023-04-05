@@ -14,27 +14,35 @@ def findGFromPendulum(l, T, ocillations):
 def findSwingTimeMathPendulum(l):
     return("Wip")
 
+while True:
+    # input equation
+    print("choose calculation")
+    choice = input()
+    try:
+        choice = int(choice)
+    except:
+        print("not an option, only use whole numbers while choosing a calculation")
+        continue
+    
+    if choice == 1:
+        print("enter value for length")
+        l = float(input())
+        print("enter value for time")
+        T = float(input())
+        print("enter value for ocillations")
+        ocillations = float(input())
 
-# input equation
-print("choose calculation")
-choice = int(input())
+        print(findGFromPendulum(l, T, ocillations))
+        print("calc complete")
 
-if choice == 1:
-    print("enter value for length")
-    l = float(input())
-    print("enter value for time")
-    T = float(input())
-    print("enter value for ocillations")
-    ocillations = float(input())
+    elif choice == 2:
+        print("enter value for l")
+        l = float(input())
+        print(findSwingTimeMathPendulum(l))
 
-    print(findGFromPendulum(l, T, ocillations))
-    print("calc done, ending .py file")
+    elif choice == 0:
+        print("ending .py file")
+        quit()
 
-elif choice == 2:
-    print("enter value for l")
-    l = float(input())
-    print(findSwingTimeMathPendulum(l))
-
-elif choice == 0:
-    print("ending .py file")
-quit()
+    else :
+        continue
