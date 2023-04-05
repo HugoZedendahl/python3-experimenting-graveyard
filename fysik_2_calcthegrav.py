@@ -1,6 +1,9 @@
 # Python program to find roots of quadratic equation
 import math
 
+l = 0
+T = 0
+ocillations = 0
 
 # function for finding g
 def findGFromPendulum(l, T, ocillations):
