@@ -7,12 +7,12 @@ ocillations = 0
 
 # function for finding g
 def findGFromPendulum(l, T, ocillations):
-    z = b / c
+    z = T / ocillations
     x = 4 * math.pi** 2
-    print((x * a) / z ** 2)
+    return((x * l) / z ** 2)
 
 def findSwingTimeMathPendulum(l):
-    print ("Wip")
+    return("Wip")
 
 
 # input equation
@@ -28,12 +28,13 @@ if choice == 1:
     ocillations = float(input())
 
     print(findGFromPendulum(l, T, ocillations))
+    print("calc done, ending .py file")
 
 elif choice == 2:
     print("enter value for l")
     l = float(input())
-    print (findSwingTimeMathPendulum(a))
+    print(findSwingTimeMathPendulum(l))
 
-elif choise == 0:
+elif choice == 0:
     print("ending .py file")
 quit()
