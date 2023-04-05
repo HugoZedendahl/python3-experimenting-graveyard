@@ -21,13 +21,10 @@ choice = int(input())
 
 if choice == 1:
     print("enter value for length")
-    global l
     l = float(input())
     print("enter value for time")
-    global T
     T = float(input())
     print("enter value for ocillations")
-    global ocillations
     ocillations = float(input())
 
     print(findGFromPendulum(l, T, ocillations))
