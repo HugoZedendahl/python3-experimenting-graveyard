@@ -31,7 +31,6 @@ if choice == 1:
 
 elif choice == 2:
     print("enter value for l")
-    global l
     l = float(input())
     print (findSwingTimeMathPendulum(a))
 
