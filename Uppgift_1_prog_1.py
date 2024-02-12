@@ -16,6 +16,7 @@ while True:
         except:
             print("inte ett nummer eller sluta, försök igen")
             continue
+    #testar för att se att strängen kan bli översatt
 
     print(variableToConvert)
     variableToConvert = int(variableToConvert)
