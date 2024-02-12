@@ -19,6 +19,6 @@ while True:
             continue
 
     print(variableToConvert)
-    #översätter flyttalet till ett heltal
     variableToConvert = int(variableToConvert)
+    #översätter flyttalet till ett heltal
     print(variableToConvert)
