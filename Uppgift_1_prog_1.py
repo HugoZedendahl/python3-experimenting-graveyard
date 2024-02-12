@@ -1,10 +1,10 @@
 variableToConvert = ""
 #variabeln vi vill arbeta med
 while True:
-    print("skriv in en siffra, eller skriv [sluta] för att avsluta programmet")
+    print("""skriv in en siffra, eller skriv "sluta" för att avsluta programmet""")
     variableToConvert = input()
     #input för siffra
-    print("du skrev "+variableToConvert)
+    print("""du skrev " """+variableToConvert""" " """)
     #visar strängen
 
     if(variableToConvert == "sluta"):
@@ -14,7 +14,7 @@ while True:
             variableToConvert = float(variableToConvert)
             #översätter strängen till ett flyttal
         except:
-            print("inte ett nummer eller sluta, försök igen")
+            print(""" " """variableToConvert""" " """ """"är inte ett nummer eller "sluta", försök igen""")
             continue
     #testar för att se att strängen kan bli översatt
 
