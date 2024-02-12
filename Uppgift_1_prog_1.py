@@ -1,4 +1,3 @@
-
 variableToConvert = ""
 #variabeln vi vill arbeta med
 while True:
