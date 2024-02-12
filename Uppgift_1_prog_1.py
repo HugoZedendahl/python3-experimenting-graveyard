@@ -18,7 +18,8 @@ while True:
         except:
             print(""" " """+variableToConvert+""" " """ """"är inte ett nummer eller "sluta", försök igen""")
             continue
-    #testar för att se att strängen kan bli översatt
+    #testar för att se att strängen kan bli översatt ifall den inte kan bli ett flyttal så startar programmet om
+    
 
     print(variableToConvert)
     variableToConvert = int(variableToConvert)
