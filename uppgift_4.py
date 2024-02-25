@@ -1,6 +1,22 @@
 import math
 import time
+import asyncio
 
+async def printa_efter(paus, innehåll):
+    await asyncio.sleep(paus)
+    print(innehåll)
+    print("hanterades "+str(time.time()))
+
+async def hej():
+    uppgift1 = asyncio.create_task(
+        printa_efter(1, 'hello'))
+
+    uppgift2 = asyncio.create_task(
+        printa_efter(2, 'world'))
+
+    await uppgift1
+    await uppgift2
+#detta är en async function som säger hello world i två delar med en liten paus mellan som kan hanteras medans koden körs. som ett exempel för sleep svaret i uppgiften
 var1 = 5
 var2 = 25 
 #våra tal
@@ -44,6 +60,7 @@ print(cosOfPi)
 #printar resultatet av cos of pi
 
 print(time.time())
+asyncio.run(hej())
 time.sleep(5)
 print(time.time())
 
