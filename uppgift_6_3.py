@@ -17,6 +17,8 @@ print("please add a person to the database")
 
 while mainLoopActive == True:
     #starts the main database entry loop 
+    cont = True
+    #add this here so upon adding more pepole we dont get stuck in a endless loop
     input
     while gInputActive == True:
         print("is the person we are entering a man or a woman?")
@@ -29,7 +31,7 @@ while mainLoopActive == True:
                 print("please enter 1 or 2")
         except:
             print("not an option, try again")
-
+    #checks the catefory and where to add people
     while aInputActive == True:
         print("what is the persons age?")
         try:
@@ -43,7 +45,7 @@ while mainLoopActive == True:
             aInputActive = False
         except:
             print("not a valid input, please try again")
-
+    #adds to the database
     while cont == True:
         print("add more people? 1 for yes. 2 for no.")
         try:
@@ -63,7 +65,7 @@ while mainLoopActive == True:
         except:
             print("please only enter 1 or 2")
             #if someone tries to enter wierd data
-    
+#below are the end  prosseces as given in the assignent
 M1 = G1/A1
 
 print(f"there are {A1} men in the database wih a avarage age of {M1}")
