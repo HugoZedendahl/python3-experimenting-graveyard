@@ -1,3 +1,5 @@
+import terminal
+
 container = input("any number digits int: ")
 container = str(container)
 container = list(container)
