@@ -1,5 +1,5 @@
 matrix = ([],[],[])
-wordList = open("the nine.txt", "r").readlines()
+wordList = open("svenskaOrd.txt", "r").readlines()
 while True:
     inputLetters = input("Nian: ")
     if inputLetters.conunt() == 9:
