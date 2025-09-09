@@ -1,0 +1,3 @@
+(python) 
+        quadrant = lambda x, y: ((1,2),(4,3))[y<0][x<0]
+#explanation: This lambda function gets x and y from input. Then it checks [y<0] and [x<0]. These 2 inequalities can return either True (1) or False (0). After getting numbers from these 2 inequalities we use them as indexes for set that contains two other sets. For example, if y is negative then a point is either in 3rd or 4th quadrant. And in program if y is negative then first number (index) is 1 (True). And we have exactly these quadrants in second (remember index starts from zero) set: (4,3).
