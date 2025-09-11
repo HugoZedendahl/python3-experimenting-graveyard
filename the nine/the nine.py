@@ -23,18 +23,23 @@ while True:
         print("Fel: för få bokstäver, försök igen.")
 matrix = list(inputLetters)
 specialLetter = matrix[4]
+
 for x in wordList:
-    matches = 0
-    for y in matrix:
-        if y in x:
-            matches += 1
-    if x.count(specialLetter) > 0 and 9 > matches > 4:
-        outputList.append(x.strip())
-    elif x.count(specialLetter) > 0 and matches == 9:
-        specialOutputList.append(x.strip())
+    word = x.strip()
+    currentWord = list(word)
+    if 4 <= len(currentWord) <= 8 and all(letter in matrix for letter in currentWord) and specialLetter in currentWord:
+        outputList.append(word)
+    elif sorted(currentWord) == sorted(matrix):
+        specialOutputList.append(word)
+
 for z in outputList:
     print(z)
 print("")
 print(len(specialOutputList)," ord som använder alla bokstäver:")
 for zz in specialOutputList:
     print(zz)
+
+
+# asw
+# fde
+# lkg
