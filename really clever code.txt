@@ -7,3 +7,8 @@
         print(list(mydict.keys())[list(mydict.values()).index(16)])  # Prints george
 
 #explanation: Basically, it separates the dictionary's values in a list, finds the position of the value you have, and gets the key at that position.
+
+#def sumsquares(l):
+#    return sum([ i**2 if type(i) == int else sumsquares(i) for i in l ])
+
+# lambdafunction for returning the square of a item in a list and reccuring the function if its a list in the list
